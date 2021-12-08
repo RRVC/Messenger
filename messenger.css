@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {    
+    background:rgb(70, 142, 236);
+    font: normal 12pt sans-serif;
+}
+header {
+    display: none;
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+}
+select {
+    margin-bottom: 2%;    
+}
+textarea {
+    margin: 0px;
+    width: 80%; height: 85px;
+    background-color: lightblue;    
+    font-size: 16px;    
+    overflow: auto;    
+    vertical-align: bottom;    
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+#everything {
+    margin: 5%;    
+    width: 90%;
+    height: 35em;
+}
+#functions {
+    width: 45%;
+    float: left;    
+    height: 88%;
+    overflow: auto;
+}
+#msgs_display {
+    width: 45%;
+    float: right;
+    height: 88%;
+}
+input[type="button"]:hover, input[type="color"]{
+    background-color: lightblue;
+    cursor: pointer;
+}
+input[type="color"] {
+    vertical-align: bottom;
+    width: 40px;
+}
+input[type="button"]  {
+    border-radius: 10px;
+    padding: 5px;
+}
+#btn_container {        
+    text-align: center;    
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#users_container {
+    border-radius: 5px;
+    border: solid 1px black;
+    background-color: lightblue;    
+    height: 100%;
+    overflow: auto;
+    padding: 10px 0px 0px 10px;
+}
+#users_display {
+    height: 30%; width: 40%;
+    margin-top: 5%;    
+}
+#msgs_container {    
+    margin-top: 5%;
+    height: 70%; width: 100%;
+    background-color: lightblue;    
+    border: solid 1px black;    
+    overflow-wrap: anywhere;
+    overflow: auto;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    font-weight: bolder;
+    margin-left: 1%;
+}
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 2%;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 8px;
+}  
+.scrollbar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+    background: grey;    
+    border-radius: 10px;
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
+footer {
+    margin-top: -60px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

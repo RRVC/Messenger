@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messenger 1.1</title>
+    <link rel="stylesheet" href="messenger.css">    
+</head>
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+    <div id="everything">
+        <section id="functions">
+            <h2>Entradas</h2>
+            
+
+<!--=================================== Send messages sector ===================================-->
+
+            <div id="send">
+                <span>@</span>
+                
+                <select name="user" id="sel_user">
+                    <option value="0" style="display: none;" selected disabled>Usuário</option>                    
+                </select>
+                <error_message class="error" id="user_error"></error_message><br>
+
+                <span id="span_msg">Mensagem:</span>
+                <error_message class="error" id="msg_error"></error_message><br>
+                <textarea name="msg_input" id="msg_input" cols="1" rows="1" maxlength="280" class="scrollbar" placeholder="Insira sua mensagem..."></textarea><br>
+                <div id="btn_container">
+                    <input type="button" id="btn_send" value="Enviar" onclick="send()">
+                    <input type="button" id="btn_lorem" value="Preencher com Lorem" onclick="inputLorem()">
+                </div>                
+            </div>
+
+<!--=================================== Sign up sector ===================================-->
+
+            <div id="signUp">
+                <span>@</span>
+                <input type="text" name="user_input" id="user_input" maxlength="18" placeholder="Digite seu nome">
+                <error_message class="error" id="name_error"></error_message><br><br>
+                <input type="button" id="btn_signUp" value="Criar Usuário" onclick="signUp()">
+                <input type="button" id="btn_signUpRNG" value="Usuário RNG" onclick="signUpRNG()">
+                <input type="color" name="color_input" id="color_input">
+            </div>
+
+            <div id="users_display">
+                <span>Usuários:<br></span>
+                <div id="users_container" class="scrollbar">
+
+                </div>
+            </div>
+
+<!--=================================== Messages display ===================================-->
+
+        </section>
+        <section id="msgs_display">
+            <span><h2>Mensagens</h2></span>
+            <div id="msgs_container" class="scrollbar">
+
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; RRVTI</p>              
+    </footer>
+    <script src="messenger.js">
+
+    </script>    
+</body>
+</html>
